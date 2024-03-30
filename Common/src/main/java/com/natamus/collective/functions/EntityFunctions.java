@@ -43,15 +43,7 @@ public class EntityFunctions {
 	}
 
 	public static boolean isMilkable(Entity entity) {
-		if (entity instanceof Sheep || entity instanceof Llama || entity instanceof Pig || entity instanceof Donkey || entity instanceof Horse || entity instanceof Mule) {
-			if (!(entity instanceof Animal)) {
-				return false;
-			}
-
-			Animal animal = (Animal)entity;
-			return !animal.isBaby();
-		}
-		return false;
+		return true;
 	}
 	// END: CHECK functions
 
